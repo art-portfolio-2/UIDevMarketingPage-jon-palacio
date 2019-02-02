@@ -173,19 +173,36 @@ img {
   /*margin: 0 5%;*/
   /*}*/
 }
-h1 {
-  font-family: 'Lato', sans-serif;
-  color: hotpink;
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
 }
-a {
-  font-size: 4rem;
+.nav__container a {
   text-decoration: none;
+  font-size: 4rem;
+}
+.twitter__logo {
+  color: #38a1f3;
 }
 .facebook__logo {
   color: #3b5998;
 }
-.twitter__logo {
-  color: #38A1F3;
+.insta__logo {
+  color: #8a3ab9;
+}
+.link__logo {
+  color: #0077b5;
+}
+.social__toggle--btn {
+  color: black;
+  font-size: 4rem;
+  border: none;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: hotpink;
 }
 @font-face {
   font-family: 'Lato';
