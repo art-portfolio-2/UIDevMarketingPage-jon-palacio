@@ -216,6 +216,35 @@ img {
   background-color: black;
   height: 100vh;
 }
+.hero__container .hero__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20% auto;
+  opacity: 0.8;
+  background: black;
+  border-radius: 2%;
+  /*border: @showMe;*/
+}
+.hero__container .hero__section .hero__intro {
+  color: white;
+  /*border: @showMe;*/
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  line-height: 5.5rem;
+  margin-bottom: 0;
+  padding: 0.1rem;
+}
+.hero__container .hero__section .cta__btn {
+  width: 65%;
+  font-size: 3.5rem;
+  margin: 2% 0;
+  background: black;
+  border: 3px solid white;
+  color: white;
+}
 @font-face {
   font-family: 'Lato';
   font-style: italic;
