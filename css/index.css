@@ -205,6 +205,7 @@ img {
   border: none;
   margin-right: 2rem;
   margin-top: 5%;
+  cursor: pointer;
 }
 .logo-img {
   margin-top: 5%;
@@ -279,6 +280,110 @@ img {
 }
 .photo__grid img {
   margin: 1% 1%;
+}
+.one {
+  font-size: 15rem;
+}
+.two {
+  font-size: 15rem;
+}
+.three {
+  font-size: 15rem;
+}
+.four {
+  font-size: 15rem;
+}
+.diceInfo__section {
+  /*border: @showMe;*/
+  display: grid;
+  grid-template-areas: "boxOne boxTwo" "boxThree boxFour";
+  align-content: start;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .diceInfo__section {
+    display: grid;
+    grid-template-areas: "boxOne" "boxTwo" "boxThree" "boxFour";
+  }
+}
+.diceInfo__section .diceInfo__heading {
+  margin: 4%;
+}
+.diceInfo__section .diceInfo__p {
+  margin: 1%;
+  line-height: 3rem;
+  font-size: 1.8rem;
+}
+.boxOne {
+  grid-area: boxOne;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .boxOne {
+    grid-area: boxOne;
+  }
+}
+.boxTwo {
+  grid-area: boxTwo;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .boxTwo {
+    grid-area: boxTwo;
+  }
+}
+.boxThree {
+  grid-area: boxThree;
+  margin: 2%;
+}
+.boxFour {
+  grid-area: boxFour;
+  margin: 2%;
+}
+.whoWeAre__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  /*border: @showMe;*/
+}
+.whoWeAre__container h2 {
+  margin-bottom: 3%;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.cta__container {
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  background: black;
+  color: white;
+  margin-top: 4%;
+}
+.cta__container h2 {
+  color: white;
+  font-size: 3.5rem;
+  text-align: start;
+  width: 70%;
+  margin: 2%;
+  line-height: 5rem;
+}
+.cta__container .cta__section--btn {
+  width: 250px;
+  height: 100px;
+  margin: 2%;
+  border: 2px solid white;
+  color: white;
+  background: black;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.cta__container .cta__section--btn:hover {
+  color: lime;
+  background: darkgrey;
+  border: 2px solid lime;
 }
 @font-face {
   font-family: 'Lato';

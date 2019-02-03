@@ -1,0 +1,50 @@
+//WHO WE ARE SECTION STYLING
+
+.whoWeAre__container {
+	.custom-layout(center, flex-start);
+	flex-direction: column;
+	margin: 0 auto;
+	width: 70%;
+	/*border: @showMe;*/
+
+	h2 {
+		margin-bottom: 3%;
+		font-size: 4rem;
+		text-transform: uppercase;
+	}
+}
+
+// CTA CONTAINER SECTION STYLING
+
+.cta__container {
+	.custom-layout(center, space-evenly);
+	background: black;
+	color: white;
+	margin-top: 4%;
+
+	h2 {
+		color: white;
+		font-size: 3.5rem;
+		text-align: start;
+		width: 70%;
+		margin: 2%;
+		line-height: 5rem;
+	}
+
+	.cta__section--btn {
+		width: 250px;
+		height: 100px;
+		margin: 2%;
+		border: 2px solid white;
+		color: white;
+		background: black;
+		font-size: 3rem;
+		cursor: pointer;
+
+		&:hover {
+			color: lime;
+			background: darkgrey;
+			border: 2px solid lime;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+//DICE SECTION STYLING
+
+//DICE SIZING AND STYLING
+.one {
+  font-size: @diceSecSize;
+}
+
+.two {
+	font-size: @diceSecSize;
+}
+
+.three {
+	font-size: @diceSecSize;
+}
+
+.four {
+	font-size: @diceSecSize;
+}
+
+.diceInfo__section {
+	/*border: @showMe;*/
+	display: grid;
+	grid-template-areas:
+	"boxOne boxTwo"
+	"boxThree boxFour";
+	align-content: start;
+	padding: 3%;
+
+	@media @phone {
+		display: grid;
+		grid-template-areas:
+		"boxOne"
+		"boxTwo"
+		"boxThree"
+		"boxFour";
+	}
+
+
+	.diceInfo__heading {
+		margin: 4%;
+	}
+
+	.diceInfo__p {
+		margin: 1%;
+		line-height: 3rem;
+		font-size: 1.8rem;
+	}
+}
+
+.boxOne {
+	grid-area: boxOne;
+	margin: 2%;
+
+	@media @phone {
+		grid-area: boxOne;
+	}
+}
+
+
+.boxTwo {
+	grid-area: boxTwo;
+	margin: 2%;
+
+	@media @phone {
+		grid-area: boxTwo;
+	}
+}
+
+.boxThree {
+	grid-area: boxThree;
+	margin: 2%;
+}
+
+.boxFour {
+	grid-area: boxFour;
+	margin: 2%;
+}
