@@ -269,6 +269,17 @@ img {
   font-size: 2.5rem;
   line-height: 5.5rem;
 }
+.photo__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+  /*border: @showMe;*/
+}
+.photo__grid img {
+  margin: 1% 1%;
+}
 @font-face {
   font-family: 'Lato';
   font-style: italic;
