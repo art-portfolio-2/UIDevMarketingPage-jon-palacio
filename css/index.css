@@ -214,6 +214,10 @@ img {
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+  text-decoration: none;
+}
+.social__toggle--btn:focus {
+  outline: none;
 }
 @media (max-width: 500px) {
   .social__toggle--btn {
