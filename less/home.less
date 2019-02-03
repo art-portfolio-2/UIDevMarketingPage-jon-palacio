@@ -26,6 +26,14 @@
 		line-height: 5.5rem;
 		margin-bottom: 0;
 		padding: .1rem;
+
+		@media @phone {
+			font-size: 2.0rem;
+			letter-spacing: .1rem;
+			line-height: 3rem;
+			margin-bottom: 2%;
+			text-align: center;
+		}
 		}
 
 		.cta__btn {
@@ -35,6 +43,16 @@
 			background: black;
 			border: 3px solid white;
 			color: white;
+
+			&:hover {
+				background: darkgrey;
+				color: lime;
+				border: 2px solid lime;
+			}
+
+			@media @phone {
+				width: 100%;
+			}
 		}
 }
 }
@@ -45,8 +63,23 @@
 	margin: 5% 0;
 	padding: 5%;
 
+	@media @900 {
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media @phone {
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1%;
+	}
+
 	.main__text {
 		margin-bottom: 6%;
+
+		@media @phone {
+			font-size: 3rem;
+		}
 	}
 
 	.hireUs--cta {
@@ -57,21 +90,74 @@
 		color: black;
 		border: 2px solid black;
 		box-shadow: 1px 1px 10px black;
+		text-transform: uppercase;
+
+		&:hover {
+			background: black;
+			color: white;
+			border: 2px solid white;
+		}
+
+		@media @900 {
+			width: 60%;
+			font-size: 4rem;
+		}
+
+		@media @phone {
+			width: 100%;
+			margin-bottom: 4%;
+		}
 	}
 
 	.main__p {
 		font-size: 2.5rem;
 		line-height: 5.5rem;
+
+		@media @900 {
+			font-size: 2.5rem;
+			line-height: 3.5rem;
+			margin-top: 2%;
+		}
+
+		@media @phone {
+			font-size: 2rem;
+			line-height: 3rem;
+			margin-bottom: 1%;
+		}
 	}
 }
 
 .photo__grid {
 	.custom-layout(center, center);
 	flex-wrap: wrap;
-	margin-bottom: 2%;
+	width: 80%;
+	margin: 0 auto;
 	/*border: @showMe;*/
+	padding: 5%;
 
 	img {
-		margin: 1% 1%;
+		margin: 3% 3%;
+	}
+
+	@media @1300 {
+		width: 100%;
+	}
+
+	@media @1000 {
+		width: 100%;
+		/*border: @showMe;*/
+
+		img {
+			margin: 0;
+		}
+	}
+
+	@media @900 {
+		/*border: @showMe;*/
+		padding: 0;
+	}
+
+	@media @phone {
+		margin-top: 0;
 	}
 }

@@ -6,6 +6,11 @@
 	opacity: .7;
 	/*background:*/
 	/*border: @showMe;*/
+
+	@media @phone {
+	  .custom-layout(center, center);
+	  flex-direction: column;
+	}
 }
 
 .nav__container a {
@@ -37,6 +42,10 @@
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+
+  @media @phone {
+    margin-right: 0;
+  }
 }
 
 .logo-img {

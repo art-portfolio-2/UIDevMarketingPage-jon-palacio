@@ -24,7 +24,25 @@
 	"boxOne boxTwo"
 	"boxThree boxFour";
 	align-content: start;
-	padding: 3%;
+	padding: 5%;
+	width: 80%;
+	margin: 0 auto;
+
+	@media @1000 {
+		grid-gap: 4%;
+		margin-bottom: 2%;
+	}
+
+	@media @800 {
+		display: grid;
+		grid-template-areas:
+		"boxOne"
+		"boxTwo"
+		"boxThree"
+		"boxFour";
+		grid-gap: 1%;
+		margin-bottom: 3%;
+	}
 
 	@media @phone {
 		display: grid;
@@ -33,6 +51,8 @@
 		"boxTwo"
 		"boxThree"
 		"boxFour";
+		padding: 0;
+		margin: 8% auto;
 	}
 
 
@@ -50,6 +70,17 @@
 .boxOne {
 	grid-area: boxOne;
 	margin: 2%;
+	background: white;
+	border: 1px solid #1d1d1d;
+	border-radius: 3%;
+	padding: 2%;
+	.custom-layout(center, center);
+	flex-direction: column;
+	box-shadow: 1px 1px 10px black;
+
+	@media @800 {
+		grid-area: boxOne;
+	}
 
 	@media @phone {
 		grid-area: boxOne;
@@ -60,6 +91,17 @@
 .boxTwo {
 	grid-area: boxTwo;
 	margin: 2%;
+	background: white;
+	border: 1px solid #1d1d1d;
+	border-radius: 3%;
+	padding: 2%;
+	.custom-layout(center, center);
+	flex-direction: column;
+	box-shadow: 1px 1px 10px black;
+
+	@media @800 {
+		grid-area: boxTwo;
+	}
 
 	@media @phone {
 		grid-area: boxTwo;
@@ -69,9 +111,31 @@
 .boxThree {
 	grid-area: boxThree;
 	margin: 2%;
+	background: white;
+	border: 1px solid #1d1d1d;
+	border-radius: 3%;
+	padding: 2%;
+	.custom-layout(center, center);
+	flex-direction: column;
+	box-shadow: 1px 1px 10px black;
+
+	@media @800 {
+		grid-area: boxThree;
+	}
 }
 
 .boxFour {
 	grid-area: boxFour;
 	margin: 2%;
+	background: white;
+	border: 1px solid #1d1d1d;
+	border-radius: 3%;
+	padding: 2%;
+	.custom-layout(center, center);
+	flex-direction: column;
+	box-shadow: 1px 1px 10px black;
+
+	@media @800 {
+		grid-area: boxFour;
+	}
 }

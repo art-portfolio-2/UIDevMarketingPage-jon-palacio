@@ -1,17 +1,42 @@
 //WHO WE ARE SECTION STYLING
 
 .whoWeAre__container {
-	.custom-layout(center, flex-start);
+	.custom-layout(center, center);
 	flex-direction: column;
+	flex-wrap: wrap;
 	margin: 0 auto;
-	width: 70%;
+	/*width: 57%;*/
 	/*border: @showMe;*/
+
+	.whoWeAreImgs__container {
+		.custom-layout(center, center);
+		flex-wrap: wrap;
+
+		@media @700 {
+			/*border: @showMe;*/
+			margin: 0 20%;
+		}
+
+		@media @phone {
+			flex-direction: column;
+			/*border: @showMe;*/
+		}
+	}
+
+	@media @phone {
+		margin: 1%;
+	}
 
 	h2 {
 		margin-bottom: 3%;
 		font-size: 4rem;
 		text-transform: uppercase;
+
+		@media @phone {
+			margin: 6% auto;
+		}
 	}
+
 }
 
 // CTA CONTAINER SECTION STYLING
@@ -22,19 +47,38 @@
 	color: white;
 	margin-top: 4%;
 
+	@media @600 {
+		.custom-layout(center, center);
+		flex-direction: column;
+	}
+
+	@media @phone {
+		.custom-layout(center, center);
+		flex-direction: column;
+	}
+
 	h2 {
 		color: white;
 		font-size: 3.5rem;
 		text-align: start;
 		width: 70%;
-		margin: 2%;
+		margin: 2% auto;
 		line-height: 5rem;
+
+		@media @1000 {
+			font-size: 2.5rem;
+			text-align: center;
+		}
+
+		@media @phone {
+			font-size: 2rem;
+		}
 	}
 
 	.cta__section--btn {
 		width: 250px;
 		height: 100px;
-		margin: 2%;
+		margin: 2% auto;
 		border: 2px solid white;
 		color: white;
 		background: black;
@@ -45,6 +89,19 @@
 			color: lime;
 			background: darkgrey;
 			border: 2px solid lime;
+		}
+
+		@media @1000 {
+			width: 200px;
+			height: 75px;
+		}
+
+		@media @600 {
+			width: 80%;
+		}
+
+		@media @phone {
+			width: 100%;
 		}
 	}
 }
