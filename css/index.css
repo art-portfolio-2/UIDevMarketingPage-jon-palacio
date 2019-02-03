@@ -223,6 +223,9 @@ img {
 .logo-img {
   margin-top: 5%;
 }
+.toggleSocial {
+  display: none;
+}
 .hero__container {
   background-image: url('../assets/analog-antique-aperture-1005332.jpg');
   background-repeat: no-repeat;
