@@ -7,6 +7,10 @@
 	//TESTING
 	height: 100vh;
 
+	@media @phone {
+		height: 75vh;
+	}
+
 	.hero__section {
 		.center();
 		flex-direction: column;
@@ -26,6 +30,7 @@
 		line-height: 5.5rem;
 		margin-bottom: 0;
 		padding: .1rem;
+		animation: scaleIcon;
 
 		@media @phone {
 			font-size: 2.0rem;

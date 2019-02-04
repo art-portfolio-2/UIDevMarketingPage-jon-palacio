@@ -197,15 +197,28 @@ img {
 }
 .twitter__logo {
   color: #38a1f3;
+  opacity: 0.7;
+}
+.twitter__logo:hover {
+  animation: scaleItem 2s;
 }
 .facebook__logo {
   color: #3b5998;
 }
+.facebook__logo:hover {
+  animation: scaleItem 2s;
+}
 .insta__logo {
   color: #8a3ab9;
 }
+.insta__logo:hover {
+  animation: scaleItem 2s;
+}
 .link__logo {
   color: #0077b5;
+}
+.link__logo:hover {
+  animation: scaleItem 2s;
 }
 .social__toggle--btn {
   color: black;
@@ -216,12 +229,16 @@ img {
   cursor: pointer;
   text-decoration: none;
 }
+.social__toggle--btn:hover {
+  animation: scaleItem 2s;
+}
 .social__toggle--btn:focus {
   outline: none;
 }
 @media (max-width: 500px) {
   .social__toggle--btn {
     margin-right: 0;
+    margin-bottom: 6%;
   }
 }
 .logo-img {
@@ -236,6 +253,11 @@ img {
   background-position: center;
   background-color: black;
   height: 100vh;
+}
+@media (max-width: 500px) {
+  .hero__container {
+    height: 75vh;
+  }
 }
 .hero__container .hero__section {
   display: flex;
@@ -257,6 +279,7 @@ img {
   line-height: 5.5rem;
   margin-bottom: 0;
   padding: 0.1rem;
+  animation: scaleIcon;
 }
 @media (max-width: 500px) {
   .hero__container .hero__section .hero__intro {
@@ -578,6 +601,12 @@ img {
     margin: 6% auto;
   }
 }
+@media (max-width: 450px) {
+  .whoWeAre__container h2 {
+    text-align: center;
+    margin-top: 10%;
+  }
+}
 .cta__container {
   display: flex;
   justify-content: center;
@@ -664,14 +693,26 @@ img {
 .footer .twitter__logo {
   font-size: 4rem;
 }
+.footer .twitter__logo:hover {
+  animation: scaleItem 2s;
+}
 .footer .facebook__logo {
   font-size: 4rem;
+}
+.footer .facebook__logo:hover {
+  animation: scaleItem 2s;
 }
 .footer .insta__logo {
   font-size: 4rem;
 }
+.footer .insta__logo:hover {
+  animation: scaleItem 2s;
+}
 .footer .link__logo {
   font-size: 4rem;
+}
+.footer .link__logo:hover {
+  animation: scaleItem 2s;
 }
 .footer .social__footer--container {
   display: flex;
@@ -684,6 +725,29 @@ img {
   color: white;
   margin: 2%;
   font-size: 3rem;
+}
+@medai (max-width: 450px) {
+  text-align: center;
+}
+@-webkit-keyframes scaleItem {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scaleItem {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 @font-face {
   font-family: 'Lato';

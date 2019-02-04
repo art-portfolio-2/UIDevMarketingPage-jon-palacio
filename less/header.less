@@ -21,18 +21,31 @@
 
 .twitter__logo {
 	color: #38a1f3;
+	opacity: .7;
+	&:hover {
+	  animation: scaleItem 2s;
+	}
 }
 
 .facebook__logo {
 	color: #3b5998;
+	&:hover {
+	  animation: scaleItem 2s;
+	}
 }
 
 .insta__logo {
 	color: #8a3ab9;
+	&:hover {
+	  animation: scaleItem 2s;
+	}
 }
 
 .link__logo {
 	color: #0077b5;
+	&:hover {
+	  animation: scaleItem 2s;
+	}
 }
 
 .social__toggle--btn {
@@ -42,6 +55,9 @@
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+  &:hover {
+    animation: scaleItem 2s;
+  }
 	text-decoration: none;
 
 	&:focus {
@@ -50,6 +66,7 @@
 
   @media @phone {
     margin-right: 0;
+    margin-bottom: 6%;
   }
 }
 
