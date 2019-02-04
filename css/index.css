@@ -415,7 +415,7 @@ img {
   grid-template-areas: "boxOne boxTwo" "boxThree boxFour";
   align-content: start;
   padding: 5%;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 @media (max-width: 1062px) {
@@ -567,6 +567,11 @@ img {
   margin-bottom: 3%;
   font-size: 4rem;
   text-transform: uppercase;
+}
+@media (max-width: 550px) {
+  .whoWeAre__container h2 {
+    margin-top: 5%;
+  }
 }
 @media (max-width: 500px) {
   .whoWeAre__container h2 {
