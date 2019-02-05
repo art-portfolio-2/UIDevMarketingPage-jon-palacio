@@ -439,6 +439,7 @@ img {
   padding: 5%;
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 1062px) {
   .diceInfo__section {
@@ -464,6 +465,11 @@ img {
 }
 .diceInfo__section .diceInfo__heading {
   margin: 4%;
+  text-transform: uppercase;
+  background: linear-gradient(to right, black, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .diceInfo__section .diceInfo__p {
   margin: 1%;
@@ -593,6 +599,10 @@ img {
   margin-bottom: 3%;
   font-size: 4rem;
   text-transform: uppercase;
+  background: linear-gradient(to right, black, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 550px) {
   .whoWeAre__container h2 {
@@ -728,6 +738,10 @@ img {
   color: white;
   margin: 2%;
   font-size: 3rem;
+  background: linear-gradient(to bottom right, white, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @medai (max-width: 450px) {
   text-align: center;
