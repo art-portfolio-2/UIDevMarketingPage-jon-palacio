@@ -181,6 +181,9 @@ img {
   opacity: 0.7;
   /*background:*/
   /*border: @showMe;*/
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 @media (max-width: 500px) {
   .nav__container {
@@ -194,31 +197,58 @@ img {
   text-decoration: none;
   font-size: 4rem;
   margin-top: 5%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .twitter__logo {
   color: #38a1f3;
   opacity: 0.7;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .twitter__logo:hover {
   animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .facebook__logo {
   color: #3b5998;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .facebook__logo:hover {
   animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .insta__logo {
   color: #8a3ab9;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .insta__logo:hover {
   animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .link__logo {
   color: #0077b5;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .link__logo:hover {
   animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .social__toggle--btn {
   color: black;
@@ -227,10 +257,16 @@ img {
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
   text-decoration: none;
 }
 .social__toggle--btn:hover {
   animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .social__toggle--btn:focus {
   outline: none;
