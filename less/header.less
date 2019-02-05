@@ -6,6 +6,9 @@
 	opacity: .7;
 	/*background:*/
 	/*border: @showMe;*/
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
 
 	@media @phone {
 	  .custom-layout(center, center);
@@ -17,22 +20,62 @@
 	text-decoration: none;
 	font-size: 4.0rem;
 	margin-top: 5%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
 }
 
 .twitter__logo {
 	color: #38a1f3;
+	opacity: .7;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
+	&:hover {
+	  animation: scaleItem 2s;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-tranform: translateZ(0);
+	}
 }
 
 .facebook__logo {
 	color: #3b5998;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
+	&:hover {
+	  animation: scaleItem 2s;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-tranform: translateZ(0);
+	}
 }
 
 .insta__logo {
 	color: #8a3ab9;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
+	&:hover {
+	  animation: scaleItem 2s;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-tranform: translateZ(0);
+	}
 }
 
 .link__logo {
 	color: #0077b5;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
+	&:hover {
+	  animation: scaleItem 2s;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-tranform: translateZ(0);
+	}
 }
 
 .social__toggle--btn {
@@ -42,6 +85,15 @@
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-tranform: translateZ(0);
+  &:hover {
+    animation: scaleItem 2s;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-tranform: translateZ(0);
+  }
 	text-decoration: none;
 
 	&:focus {
@@ -50,6 +102,7 @@
 
   @media @phone {
     margin-right: 0;
+    margin-bottom: 6%;
   }
 }
 

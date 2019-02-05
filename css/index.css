@@ -181,6 +181,9 @@ img {
   opacity: 0.7;
   /*background:*/
   /*border: @showMe;*/
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 @media (max-width: 500px) {
   .nav__container {
@@ -194,18 +197,58 @@ img {
   text-decoration: none;
   font-size: 4rem;
   margin-top: 5%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .twitter__logo {
   color: #38a1f3;
+  opacity: 0.7;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
+}
+.twitter__logo:hover {
+  animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .facebook__logo {
   color: #3b5998;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
+}
+.facebook__logo:hover {
+  animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .insta__logo {
   color: #8a3ab9;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
+}
+.insta__logo:hover {
+  animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .link__logo {
   color: #0077b5;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
+}
+.link__logo:hover {
+  animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .social__toggle--btn {
   color: black;
@@ -214,7 +257,16 @@ img {
   margin-right: 2rem;
   margin-top: 5%;
   cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
   text-decoration: none;
+}
+.social__toggle--btn:hover {
+  animation: scaleItem 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tranform: translateZ(0);
 }
 .social__toggle--btn:focus {
   outline: none;
@@ -222,6 +274,7 @@ img {
 @media (max-width: 500px) {
   .social__toggle--btn {
     margin-right: 0;
+    margin-bottom: 6%;
   }
 }
 .logo-img {
@@ -236,6 +289,11 @@ img {
   background-position: center;
   background-color: black;
   height: 100vh;
+}
+@media (max-width: 500px) {
+  .hero__container {
+    height: 75vh;
+  }
 }
 .hero__container .hero__section {
   display: flex;
@@ -290,7 +348,7 @@ img {
   justify-content: space-evenly;
   align-items: start;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 3% 0;
   padding: 5%;
 }
 @media (max-width: 933px) {
@@ -365,7 +423,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 4% auto;
   /*border: @showMe;*/
   padding: 5%;
 }
@@ -415,8 +473,9 @@ img {
   grid-template-areas: "boxOne boxTwo" "boxThree boxFour";
   align-content: start;
   padding: 5%;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 1062px) {
   .diceInfo__section {
@@ -442,6 +501,11 @@ img {
 }
 .diceInfo__section .diceInfo__heading {
   margin: 4%;
+  text-transform: uppercase;
+  background: linear-gradient(to right, black, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .diceInfo__section .diceInfo__p {
   margin: 1%;
@@ -545,6 +609,12 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.whoWeAre__container .whoWeAreImgs__container img:hover {
+  transform: scale(1.1);
+  border: 1px solid black;
 }
 @media (max-width: 767px) {
   .whoWeAre__container .whoWeAreImgs__container {
@@ -567,10 +637,25 @@ img {
   margin-bottom: 3%;
   font-size: 4rem;
   text-transform: uppercase;
+  background: linear-gradient(to right, black, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 550px) {
+  .whoWeAre__container h2 {
+    margin-top: 5%;
+  }
 }
 @media (max-width: 500px) {
   .whoWeAre__container h2 {
     margin: 6% auto;
+  }
+}
+@media (max-width: 450px) {
+  .whoWeAre__container h2 {
+    text-align: center;
+    margin-top: 10%;
   }
 }
 .cta__container {
@@ -659,14 +744,26 @@ img {
 .footer .twitter__logo {
   font-size: 4rem;
 }
+.footer .twitter__logo:hover {
+  animation: scaleItem 2s;
+}
 .footer .facebook__logo {
   font-size: 4rem;
+}
+.footer .facebook__logo:hover {
+  animation: scaleItem 2s;
 }
 .footer .insta__logo {
   font-size: 4rem;
 }
+.footer .insta__logo:hover {
+  animation: scaleItem 2s;
+}
 .footer .link__logo {
   font-size: 4rem;
+}
+.footer .link__logo:hover {
+  animation: scaleItem 2s;
 }
 .footer .social__footer--container {
   display: flex;
@@ -679,6 +776,150 @@ img {
   color: white;
   margin: 2%;
   font-size: 3rem;
+  background: linear-gradient(to bottom right, white, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@medai (max-width: 450px) {
+  text-align: center;
+}
+@-webkit-keyframes scaleItem {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scaleItem {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.carousel {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  /*position: relative;*/
+  overflow: hidden;
+  margin: 5% auto;
+}
+@media (max-width: 933px) {
+  .carousel {
+    width: 80%;
+    margin: 5% auto;
+  }
+}
+@media (max-width: 637px) {
+  .carousel {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    display: none;
+  }
+}
+.lft-btn,
+.right-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 5rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 2%;
+  cursor: pointer;
+}
+.lft-btn:hover,
+.right-btn:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+}
+.left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 70%;
+  display: none;
+}
+.coolSection {
+  width: 100%;
+  margin: 1% auto;
+  display: flex;
+  flex-direction: row;
+  /*border: @showMe;*/
+  flex-wrap: wrap;
+}
+.coolSection .area {
+  position: relative;
+  width: 31.3%;
+  height: 32%;
+  background: black;
+  margin: 1%;
+  display: inline-block;
+}
+.coolSection .area:hover .imgDetails {
+  transform: scaleY(1);
+}
+.coolSection .area .imgDetails {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.coolSection .area .imgDetails .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.coolSection .area .imgDetails .content h2 {
+  margin: 0;
+  padding: 0;
+  color: lime;
+}
+.coolSection .area .imgDetails .content p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.coolSection .area .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.coolSection .area .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+.coolSection .area .imgBox img:hover {
+  transform: scale(1.2);
 }
 @font-face {
   font-family: 'Lato';

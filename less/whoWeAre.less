@@ -11,6 +11,16 @@
 	.whoWeAreImgs__container {
 		.custom-layout(center, center);
 		flex-wrap: wrap;
+		position: relative;
+		width: 100%;
+
+		img {
+			&:hover {
+				transform: scale(1.1);
+				border: 1px solid black;
+			}
+		}
+
 
 		@media @700 {
 			/*border: @showMe;*/
@@ -31,9 +41,22 @@
 		margin-bottom: 3%;
 		font-size: 4rem;
 		text-transform: uppercase;
+		background: linear-gradient(to right, black, #848484);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@media @550 {
+			margin-top: 5%;
+		}
 
 		@media @phone {
 			margin: 6% auto;
+		}
+
+		@media @450 {
+			text-align: center;
+			margin-top: 10%;
 		}
 	}
 
