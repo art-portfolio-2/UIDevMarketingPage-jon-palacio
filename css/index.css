@@ -348,7 +348,7 @@ img {
   justify-content: space-evenly;
   align-items: start;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 3% 0;
   padding: 5%;
 }
 @media (max-width: 933px) {
@@ -423,7 +423,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 4% auto;
   /*border: @showMe;*/
   padding: 5%;
 }
@@ -864,6 +864,71 @@ img {
   width: 70%;
   display: none;
 }
+.coolSection {
+  width: 100%;
+  margin: 1% auto;
+  display: flex;
+  flex-direction: row;
+  /*border: @showMe;*/
+  flex-wrap: wrap;
+}
+.coolSection .area {
+  position: relative;
+  width: 31.3%;
+  height: 32%;
+  background: black;
+  margin: 1%;
+  display: inline-block;
+}
+.coolSection .area:hover .imgDetails {
+  transform: scaleY(1);
+}
+.coolSection .area .imgDetails {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.coolSection .area .imgDetails .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.coolSection .area .imgDetails .content h2 {
+  margin: 0;
+  padding: 0;
+  color: lime;
+}
+.coolSection .area .imgDetails .content p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.coolSection .area .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.coolSection .area .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+.coolSection .area .imgBox img:hover {
+  transform: scale(1.2);
+}
+/*.coolSection .area .imgDetails {*/
+/*position: absolute;*/
+/*top: 10px;*/
+/*left: 10px;*/
+/*bottom: 10px;*/
+/*right: 10px;*/
+/*background: rgba(0,0,0,.8);*/
+/*}*/
 @font-face {
   font-family: 'Lato';
   font-style: italic;
