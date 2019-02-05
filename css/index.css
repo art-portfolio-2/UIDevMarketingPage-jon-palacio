@@ -609,6 +609,8 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
 }
 .whoWeAre__container .whoWeAreImgs__container img:hover {
   transform: scale(1.1);
