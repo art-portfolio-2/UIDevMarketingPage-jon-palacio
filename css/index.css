@@ -332,6 +332,8 @@ img {
   background: black;
   border: 3px solid white;
   color: white;
+  text-align: center;
+  text-decoration: none;
 }
 .hero__container .hero__section .cta__btn:hover {
   background: darkgrey;
@@ -381,6 +383,8 @@ img {
   border: 2px solid black;
   box-shadow: 1px 1px 10px black;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 }
 .main__content .hireUs--cta:hover {
   background: black;
@@ -710,6 +714,11 @@ img {
   background: black;
   font-size: 3rem;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cta__container .cta__section--btn:hover {
   color: lime;
@@ -871,6 +880,11 @@ img {
   flex-direction: row;
   /*border: @showMe;*/
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .coolSection {
+    display: none;
+  }
 }
 .coolSection .area {
   position: relative;
