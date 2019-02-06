@@ -23,6 +23,10 @@
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-tranform: translateZ(0);
+
+	@media @phone {
+		margin: 2% auto;
+	}
 }
 
 .twitter__logo {
@@ -100,14 +104,27 @@
 		outline: none;
 	}
 
+	@media @600 {
+		margin-top: 2%;
+	}
+
   @media @phone {
     margin-right: 0;
     margin-bottom: 6%;
+		margin-top: 4%;
   }
 }
 
 .logo-img {
   margin-top: 5%;
+
+	@media @600 {
+		margin-top: 2%;
+	}
+
+	@media @phone {
+		margin-bottom: 0;
+	}
 
 }
 

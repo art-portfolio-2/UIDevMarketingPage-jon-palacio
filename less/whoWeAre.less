@@ -14,11 +14,20 @@
 		position: relative;
 		width: 100%;
 
+		@media @700 {
+			width: 70%;
+		}
+
 		img {
 			&:hover {
 				transform: scale(1.1);
 				border: 1px solid black;
 			}
+		}
+
+		@media @600 {
+			/*border: @showMe;*/
+			width: 90%;
 		}
 
 
@@ -45,6 +54,10 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+
+		@media @600 {
+			margin-top: 3%;
+		}
 
 		@media @550 {
 			margin-top: 5%;

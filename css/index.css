@@ -201,6 +201,11 @@ img {
   -webkit-backface-visibility: hidden;
   -webkit-tranform: translateZ(0);
 }
+@media (max-width: 500px) {
+  .nav__container a {
+    margin: 2% auto;
+  }
+}
 .twitter__logo {
   color: #38a1f3;
   opacity: 0.7;
@@ -271,14 +276,30 @@ img {
 .social__toggle--btn:focus {
   outline: none;
 }
+@media (max-width: 637px) {
+  .social__toggle--btn {
+    margin-top: 2%;
+  }
+}
 @media (max-width: 500px) {
   .social__toggle--btn {
     margin-right: 0;
     margin-bottom: 6%;
+    margin-top: 4%;
   }
 }
 .logo-img {
   margin-top: 5%;
+}
+@media (max-width: 637px) {
+  .logo-img {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .logo-img {
+    margin-bottom: 0;
+  }
 }
 .toggleSocial {
   display: none;
@@ -290,9 +311,14 @@ img {
   background-color: black;
   height: 100vh;
 }
+@media (max-width: 637px) {
+  .hero__container {
+    height: auto;
+  }
+}
 @media (max-width: 500px) {
   .hero__container {
-    height: 75vh;
+    height: auto;
   }
 }
 .hero__container .hero__section {
@@ -307,6 +333,16 @@ img {
   border-radius: 2%;
   /*border: @showMe;*/
 }
+@media (max-width: 637px) {
+  .hero__container .hero__section {
+    margin-bottom: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .hero__container .hero__section {
+    margin-top: 10%;
+  }
+}
 .hero__container .hero__section .hero__intro {
   color: white;
   /*border: @showMe;*/
@@ -317,13 +353,29 @@ img {
   padding: 0.1rem;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 637px) {
   .hero__container .hero__section .hero__intro {
     font-size: 2rem;
-    letter-spacing: 0.1rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero__container .hero__section .hero__intro {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero__container .hero__section .hero__intro {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
     line-height: 3rem;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .hero__container .hero__section .hero__intro {
+    font-size: 2rem;
   }
 }
 .hero__container .hero__section .cta__btn {
@@ -341,9 +393,15 @@ img {
   color: lime;
   border: 2px solid lime;
 }
+@media (max-width: 637px) {
+  .hero__container .hero__section .cta__btn {
+    margin-bottom: 5%;
+  }
+}
 @media (max-width: 500px) {
   .hero__container .hero__section .cta__btn {
     width: 100%;
+    margin-bottom: 5%;
   }
 }
 .main__content {
@@ -353,6 +411,12 @@ img {
   flex-direction: column;
   margin: 3% 0;
   padding: 5%;
+}
+.main__content h1 {
+  background: linear-gradient(to right, black, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 933px) {
   .main__content {
@@ -369,6 +433,18 @@ img {
 }
 .main__content .main__text {
   margin-bottom: 6%;
+}
+@media (max-width: 637px) {
+  .main__content .main__text {
+    margin-bottom: 8%;
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .main__content .main__text {
+    text-align: center;
+    font-size: 3.5rem;
+  }
 }
 @media (max-width: 500px) {
   .main__content .main__text {
@@ -392,6 +468,11 @@ img {
   color: white;
   border: 2px solid white;
 }
+@media (max-width: 637px) {
+  .main__content .hireUs--cta {
+    margin-bottom: 5%;
+  }
+}
 @media (max-width: 933px) {
   .main__content .hireUs--cta {
     width: 60%;
@@ -413,6 +494,16 @@ img {
     font-size: 2.5rem;
     line-height: 3.5rem;
     margin-top: 2%;
+  }
+}
+@media (max-width: 767px) {
+  .main__content .main__p {
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .main__content .main__p {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -622,9 +713,20 @@ img {
   position: relative;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .whoWeAre__container .whoWeAreImgs__container {
+    width: 70%;
+  }
+}
 .whoWeAre__container .whoWeAreImgs__container img:hover {
   transform: scale(1.1);
   border: 1px solid black;
+}
+@media (max-width: 637px) {
+  .whoWeAre__container .whoWeAreImgs__container {
+    /*border: @showMe;*/
+    width: 90%;
+  }
 }
 @media (max-width: 767px) {
   .whoWeAre__container .whoWeAreImgs__container {
@@ -651,6 +753,11 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 637px) {
+  .whoWeAre__container h2 {
+    margin-top: 3%;
+  }
 }
 @media (max-width: 550px) {
   .whoWeAre__container h2 {
@@ -796,8 +903,15 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@medai (max-width: 450px) {
-  text-align: center;
+@media (max-width: 450px) {
+  .footer p {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .footer p {
+    text-align: center;
+  }
 }
 @-webkit-keyframes scaleItem {
   0% {
