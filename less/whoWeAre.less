@@ -8,15 +8,20 @@
 	/*width: 57%;*/
 	/*border: @showMe;*/
 
+	@media @450 {
+		max-width: 100%;
+		/*background-color: green;*/
+	}
+
 	.whoWeAreImgs__container {
 		.custom-layout(center, center);
 		flex-wrap: wrap;
 		/*position: relative;*/
 		width: 100%;
 
-		@media @700 {
-			width: 70%;
-		}
+		/*@media @700 {*/
+			/*width: 70%;*/
+		/*}*/
 
 		img {
 			&:hover {
@@ -33,7 +38,8 @@
 
 		@media @700 {
 			/*border: @showMe;*/
-			margin: 0 20%;
+			margin: 0 auto;
+			width: 70%;
 		}
 
 		@media @phone {
@@ -44,6 +50,10 @@
 
 	@media @phone {
 		margin: 1%;
+	}
+
+	@media @450 {
+		.center();
 	}
 
 	h2 {
@@ -70,6 +80,7 @@
 		@media @450 {
 			text-align: center;
 			margin-top: 10%;
+			.center();
 		}
 	}
 

@@ -705,6 +705,12 @@ img {
   /*width: 57%;*/
   /*border: @showMe;*/
 }
+@media (max-width: 450px) {
+  .whoWeAre__container {
+    max-width: 100%;
+    /*background-color: green;*/
+  }
+}
 .whoWeAre__container .whoWeAreImgs__container {
   display: flex;
   justify-content: center;
@@ -712,11 +718,9 @@ img {
   flex-wrap: wrap;
   /*position: relative;*/
   width: 100%;
-}
-@media (max-width: 767px) {
-  .whoWeAre__container .whoWeAreImgs__container {
-    width: 70%;
-  }
+  /*@media @700 {*/
+  /*width: 70%;*/
+  /*}*/
 }
 .whoWeAre__container .whoWeAreImgs__container img:hover {
   transform: scale(1.1);
@@ -731,7 +735,8 @@ img {
 @media (max-width: 767px) {
   .whoWeAre__container .whoWeAreImgs__container {
     /*border: @showMe;*/
-    margin: 0 20%;
+    margin: 0 auto;
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
@@ -743,6 +748,13 @@ img {
 @media (max-width: 500px) {
   .whoWeAre__container {
     margin: 1%;
+  }
+}
+@media (max-width: 450px) {
+  .whoWeAre__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .whoWeAre__container h2 {
@@ -773,6 +785,9 @@ img {
   .whoWeAre__container h2 {
     text-align: center;
     margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .cta__container {
