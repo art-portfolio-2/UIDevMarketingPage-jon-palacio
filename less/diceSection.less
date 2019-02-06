@@ -62,7 +62,7 @@
 
 
 	.diceInfo__heading {
-		margin: 4%;
+		margin: 4% auto;
 		text-transform: uppercase;
 		background: linear-gradient(to right, black, #848484);
 		background-clip: text;
@@ -89,6 +89,10 @@
 	flex-direction: column;
 	box-shadow: 1px 1px 10px black;
 
+	span {
+	  margin: 2%;
+	}
+
 	@media @800 {
 		grid-area: boxOne;
 	}
@@ -109,6 +113,10 @@
 	.custom-layout(center, center);
 	flex-direction: column;
 	box-shadow: 1px 1px 10px black;
+
+	span {
+	  margin: 2%;
+	}
 
 	@media @800 {
 		grid-area: boxTwo;

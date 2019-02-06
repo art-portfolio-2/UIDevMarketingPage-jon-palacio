@@ -600,7 +600,7 @@ img {
   }
 }
 .diceInfo__section .diceInfo__heading {
-  margin: 4%;
+  margin: 4% auto;
   text-transform: uppercase;
   background: linear-gradient(to right, black, #848484);
   background-clip: text;
@@ -626,6 +626,9 @@ img {
   flex-direction: column;
   box-shadow: 1px 1px 10px black;
 }
+.boxOne span {
+  margin: 2%;
+}
 @media (max-width: 833px) {
   .boxOne {
     grid-area: boxOne;
@@ -648,6 +651,9 @@ img {
   align-items: center;
   flex-direction: column;
   box-shadow: 1px 1px 10px black;
+}
+.boxTwo span {
+  margin: 2%;
 }
 @media (max-width: 833px) {
   .boxTwo {
