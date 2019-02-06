@@ -7,15 +7,15 @@
 
 // GIVE IT JUSTIFY-CONTENT AND ALIGN-ITEMS TO GO
 .custom-layout(@justify, @align) {
-	display: flex;
-	justify-content: @justify;
-	align-items: @align;
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
 }
 
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-          border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 }
 
 .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
@@ -40,17 +40,17 @@
 }
 
 .custom-btn(@width, @height, @color) {
-	width: @width;
-	height: @height;
-	background-color: @color;
-	.custom-layout(@justify, @align);
-	cursor: pointer;
+  width: @width;
+  height: @height;
+  background-color: @color;
+  .custom-layout(@justify, @align);
+  cursor: pointer;
 
-	&:hover {
-		color: @btn-bg-color;
-		background-color: @porcelain;
-		border: 1px solid @btn-bg-color;
-		font-weight: 500;
-		font-size: 1.8rem;
-	}
+  &:hover {
+    color: @btn-bg-color;
+    background-color: @porcelain;
+    border: 1px solid @btn-bg-color;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
 }
