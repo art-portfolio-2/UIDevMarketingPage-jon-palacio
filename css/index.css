@@ -315,6 +315,7 @@ img {
   line-height: 5.5rem;
   margin-bottom: 0;
   padding: 0.1rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .hero__container .hero__section .hero__intro {
@@ -461,15 +462,19 @@ img {
 }
 .one {
   font-size: 15rem;
+  margin-top: 1%;
 }
 .two {
   font-size: 15rem;
+  margin-top: 1%;
 }
 .three {
   font-size: 15rem;
+  margin-top: 1%;
 }
 .four {
   font-size: 15rem;
+  margin-top: 1%;
 }
 .diceInfo__section {
   /*border: @showMe;*/
@@ -515,6 +520,7 @@ img {
   margin: 1%;
   line-height: 3rem;
   font-size: 1.8rem;
+  text-align: center;
 }
 .boxOne {
   grid-area: boxOne;
