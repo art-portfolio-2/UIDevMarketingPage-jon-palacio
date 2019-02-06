@@ -1,0 +1,108 @@
+//ABOUT US STYLING
+
+.container__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,.1), rgba(0,0,0,.8)), url(../assets/about__bground--img.jpeg);
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.nav__about {
+  /*background-image: url(../assets/aboutUs--hero--img.jpeg);*/
+  background: stretch;
+  /*opacity: .9;*/
+  .custom-layout(center, center);
+  flex-direction: column;
+  /*border: @showMe;*/
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    opacity: .6;
+    margin: 20% auto;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+
+.whoWeAre__about {
+  .custom-layout(center, center);
+  /*border: @showMe;*/
+  background-position: center;
+  /*background-image: url(../assets/aboutUs--hero--img.jpeg);*/
+  flex-direction: column;
+  width: 100%;
+  margin: 2% auto;
+
+  .whoWeAreImgs__about {
+    .custom-layout(space-evenly, center);
+    margin: 5% auto;
+    flex-wrap: wrap;
+    width: 100%;
+    /*border: @showMe;*/
+
+    img {
+      height: 192px;
+      width: 192px;
+      border-radius: 50%;
+    }
+
+    @media @800 {
+      .custom-layout(center, center);
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    font-size: 6rem;
+    color:white;
+    text-align: center;
+    margin: 2% auto;
+    letter-spacing: .2rem;
+    width: 50%;
+    background: #1d1d1d;
+    opacity: .7;
+    padding: 2%;
+    border-radius: 2%;
+
+    @media @600 {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 2rem;
+    line-height: 5rem;
+    letter-spacing: .2rem;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5%;
+    background: #1d1d1d;
+    opacity: .7;
+    padding: 2%;
+    border-radius: 2%;
+
+    @media @600 {
+      line-height: 3rem;
+    }
+
+    @media @phone {
+      line-height: 2.5rem;
+      font-size: 2rem;
+      letter-spacing: .2rem;
+      width: 75%;
+    }
+  }
+}
+
+footer {
+  margin-top: 0;
+}
