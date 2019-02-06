@@ -1132,13 +1132,21 @@ img {
   /*background-image: url(../assets/aboutUs--hero--img.jpeg);*/
   flex-direction: column;
   width: 100%;
+  margin: 2% auto;
 }
 .whoWeAre__about .whoWeAreImgs__about {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 5% auto;
   flex-wrap: wrap;
+  width: 100%;
+  /*border: @showMe;*/
+}
+.whoWeAre__about .whoWeAreImgs__about img {
+  height: 192px;
+  width: 192px;
+  border-radius: 50%;
 }
 @media (max-width: 833px) {
   .whoWeAre__about .whoWeAreImgs__about {

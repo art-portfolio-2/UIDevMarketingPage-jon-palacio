@@ -39,11 +39,20 @@
   /*background-image: url(../assets/aboutUs--hero--img.jpeg);*/
   flex-direction: column;
   width: 100%;
+  margin: 2% auto;
 
   .whoWeAreImgs__about {
-    .custom-layout(center, center);
+    .custom-layout(space-evenly, center);
     margin: 5% auto;
     flex-wrap: wrap;
+    width: 100%;
+    /*border: @showMe;*/
+
+    img {
+      height: 192px;
+      width: 192px;
+      border-radius: 50%;
+    }
 
     @media @800 {
       .custom-layout(center, center);
