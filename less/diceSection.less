@@ -3,150 +3,148 @@
 //DICE SIZING AND STYLING
 .one {
   font-size: @diceSecSize;
-	margin-top: 1%;
+  margin-top: 1%;
 }
 
 .two {
-	font-size: @diceSecSize;
-	margin-top: 1%;
+  font-size: @diceSecSize;
+  margin-top: 1%;
 }
 
 .three {
-	font-size: @diceSecSize;
-	margin-top: 1%;
+  font-size: @diceSecSize;
+  margin-top: 1%;
 }
 
 .four {
-	font-size: @diceSecSize;
-	margin-top: 1%;
+  font-size: @diceSecSize;
+  margin-top: 1%;
 }
 
 .diceInfo__section {
-	/*border: @showMe;*/
-	display: grid;
-	grid-template-areas:
-	"boxOne boxTwo"
-	"boxThree boxFour";
-	align-content: start;
-	padding: 5%;
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
+  /*border: @showMe;*/
+  display: grid;
+  grid-template-areas:
+    'boxOne boxTwo'
+    'boxThree boxFour';
+  align-content: start;
+  padding: 5%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 
-	@media @1000 {
-		grid-gap: 4%;
-		margin-bottom: 2%;
-	}
+  @media @1000 {
+    grid-gap: 4%;
+    margin-bottom: 2%;
+  }
 
-	@media @800 {
-		display: grid;
-		grid-template-areas:
-		"boxOne"
-		"boxTwo"
-		"boxThree"
-		"boxFour";
-		grid-gap: 1%;
-		margin-bottom: 3%;
-	}
+  @media @800 {
+    display: grid;
+    grid-template-areas:
+      'boxOne'
+      'boxTwo'
+      'boxThree'
+      'boxFour';
+    grid-gap: 1%;
+    margin-bottom: 3%;
+  }
 
-	@media @phone {
-		display: grid;
-		grid-template-areas:
-		"boxOne"
-		"boxTwo"
-		"boxThree"
-		"boxFour";
-		padding: 0;
-		margin: 8% auto;
-	}
+  @media @phone {
+    display: grid;
+    grid-template-areas:
+      'boxOne'
+      'boxTwo'
+      'boxThree'
+      'boxFour';
+    padding: 0;
+    margin: 8% auto;
+  }
 
+  .diceInfo__heading {
+    margin: 4% auto;
+    text-transform: uppercase;
+    background: linear-gradient(to right, black, #848484);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-	.diceInfo__heading {
-		margin: 4% auto;
-		text-transform: uppercase;
-		background: linear-gradient(to right, black, #848484);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	.diceInfo__p {
-		margin: 1%;
-		line-height: 3rem;
-		font-size: 1.8rem;
-		text-align: center;
-	}
+  .diceInfo__p {
+    margin: 1%;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .boxOne {
-	grid-area: boxOne;
-	margin: 2%;
-	background: white;
-	border: 1px solid #1d1d1d;
-	border-radius: 3%;
-	padding: 2%;
-	.custom-layout(center, center);
-	flex-direction: column;
-	box-shadow: 1px 1px 10px black;
+  grid-area: boxOne;
+  margin: 2%;
+  background: white;
+  border: 1px solid #1d1d1d;
+  border-radius: 3%;
+  padding: 2%;
+  .custom-layout(center, center);
+  flex-direction: column;
+  box-shadow: 1px 1px 10px black;
 
-	@media @800 {
-		grid-area: boxOne;
-	}
+  @media @800 {
+    grid-area: boxOne;
+  }
 
-	@media @phone {
-		grid-area: boxOne;
-	}
+  @media @phone {
+    grid-area: boxOne;
+  }
 }
 
-
 .boxTwo {
-	grid-area: boxTwo;
-	margin: 2%;
-	background: white;
-	border: 1px solid #1d1d1d;
-	border-radius: 3%;
-	padding: 2%;
-	.custom-layout(center, center);
-	flex-direction: column;
-	box-shadow: 1px 1px 10px black;
+  grid-area: boxTwo;
+  margin: 2%;
+  background: white;
+  border: 1px solid #1d1d1d;
+  border-radius: 3%;
+  padding: 2%;
+  .custom-layout(center, center);
+  flex-direction: column;
+  box-shadow: 1px 1px 10px black;
 
-	@media @800 {
-		grid-area: boxTwo;
-	}
+  @media @800 {
+    grid-area: boxTwo;
+  }
 
-	@media @phone {
-		grid-area: boxTwo;
-	}
+  @media @phone {
+    grid-area: boxTwo;
+  }
 }
 
 .boxThree {
-	grid-area: boxThree;
-	margin: 2%;
-	background: white;
-	border: 1px solid #1d1d1d;
-	border-radius: 3%;
-	padding: 2%;
-	.custom-layout(center, center);
-	flex-direction: column;
-	box-shadow: 1px 1px 10px black;
+  grid-area: boxThree;
+  margin: 2%;
+  background: white;
+  border: 1px solid #1d1d1d;
+  border-radius: 3%;
+  padding: 2%;
+  .custom-layout(center, center);
+  flex-direction: column;
+  box-shadow: 1px 1px 10px black;
 
-	@media @800 {
-		grid-area: boxThree;
-	}
+  @media @800 {
+    grid-area: boxThree;
+  }
 }
 
 .boxFour {
-	grid-area: boxFour;
-	margin: 2%;
-	background: white;
-	border: 1px solid #1d1d1d;
-	border-radius: 3%;
-	padding: 2%;
-	.custom-layout(center, center);
-	flex-direction: column;
-	box-shadow: 1px 1px 10px black;
+  grid-area: boxFour;
+  margin: 2%;
+  background: white;
+  border: 1px solid #1d1d1d;
+  border-radius: 3%;
+  padding: 2%;
+  .custom-layout(center, center);
+  flex-direction: column;
+  box-shadow: 1px 1px 10px black;
 
-	@media @800 {
-		grid-area: boxFour;
-	}
+  @media @800 {
+    grid-area: boxFour;
+  }
 }

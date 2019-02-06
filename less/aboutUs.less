@@ -5,7 +5,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to right bottom, rgba(0,0,0,.1), rgba(0,0,0,.8)), url(../assets/about__bground--img.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../assets/about__bground--img.jpeg);
   background-position: center;
   background-size: cover;
   max-width: 100%;
@@ -22,7 +27,7 @@
   margin: 0 auto;
 
   img {
-    opacity: .6;
+    opacity: 0.6;
     margin: 20% auto;
   }
 
@@ -30,7 +35,6 @@
     display: none;
   }
 }
-
 
 .whoWeAre__about {
   .custom-layout(center, center);
@@ -62,13 +66,13 @@
 
   h2 {
     font-size: 6rem;
-    color:white;
+    color: white;
     text-align: center;
     margin: 2% auto;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     width: 50%;
     background: #1d1d1d;
-    opacity: .7;
+    opacity: 0.7;
     padding: 2%;
     border-radius: 2%;
 
@@ -81,12 +85,12 @@
     color: white;
     font-size: 2rem;
     line-height: 5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     width: 50%;
     text-align: center;
     margin-bottom: 5%;
     background: #1d1d1d;
-    opacity: .7;
+    opacity: 0.7;
     padding: 2%;
     border-radius: 2%;
 
@@ -97,7 +101,7 @@
     @media @phone {
       line-height: 2.5rem;
       font-size: 2rem;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       width: 75%;
     }
   }
