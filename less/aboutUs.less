@@ -43,6 +43,11 @@
     .custom-layout(center, center);
     margin: 5% auto;
     flex-wrap: wrap;
+
+    @media @800 {
+      .custom-layout(center, center);
+      flex-direction: column;
+    }
   }
 
   h2 {
@@ -56,6 +61,10 @@
     opacity: .7;
     padding: 2%;
     border-radius: 2%;
+
+    @media @600 {
+      font-size: 4rem;
+    }
   }
 
   p {
@@ -70,6 +79,17 @@
     opacity: .7;
     padding: 2%;
     border-radius: 2%;
+
+    @media @600 {
+      line-height: 3rem;
+    }
+
+    @media @phone {
+      line-height: 2.5rem;
+      font-size: 2rem;
+      letter-spacing: .2rem;
+      width: 75%;
+    }
   }
 }
 

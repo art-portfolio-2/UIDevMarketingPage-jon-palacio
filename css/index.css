@@ -1132,6 +1132,14 @@ img {
   margin: 5% auto;
   flex-wrap: wrap;
 }
+@media (max-width: 833px) {
+  .whoWeAre__about .whoWeAreImgs__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .whoWeAre__about h2 {
   font-size: 6rem;
   color: white;
@@ -1143,6 +1151,11 @@ img {
   opacity: 0.7;
   padding: 2%;
   border-radius: 2%;
+}
+@media (max-width: 637px) {
+  .whoWeAre__about h2 {
+    font-size: 4rem;
+  }
 }
 .whoWeAre__about p {
   color: white;
@@ -1156,6 +1169,19 @@ img {
   opacity: 0.7;
   padding: 2%;
   border-radius: 2%;
+}
+@media (max-width: 637px) {
+  .whoWeAre__about p {
+    line-height: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .whoWeAre__about p {
+    line-height: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    width: 75%;
+  }
 }
 footer {
   margin-top: 0;
