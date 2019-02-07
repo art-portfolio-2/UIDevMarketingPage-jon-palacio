@@ -959,11 +959,6 @@ img {
   width: 60%;
   margin: 0 auto;
 }
-@media (max-width: 1600px) {
-  .footer .social__footer--container {
-    margin-top: 4%;
-  }
-}
 .footer p {
   color: white;
   margin: 2%;
@@ -1254,6 +1249,121 @@ img {
   width: auto;
   background: transparent;
   font-style: italic;
+}
+.footer {
+  width: 100%;
+  min-height: 40rem;
+  height: auto;
+  background: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+}
+@media (max-width: 1600px) {
+  .footer img {
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 1363px) {
+  .footer img {
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 1600px) {
+  .footer {
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1363px) {
+  .footer {
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1062px) {
+  .footer {
+    height: auto;
+  }
+}
+.footer .about {
+  font-size: 3rem;
+  margin: 1% auto;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.footer .about:hover {
+  color: lime;
+  background: black;
+  border: 1px solid lime;
+  padding: 1%;
+  transform: scale(1.1);
+}
+.footer .about:active {
+  text-decoration: none;
+}
+.footer .twitter__logo {
+  font-size: 4rem;
+}
+.footer .twitter__logo:hover {
+  animation: scaleItem 2s;
+}
+.footer .facebook__logo {
+  font-size: 4rem;
+}
+.footer .facebook__logo:hover {
+  animation: scaleItem 2s;
+}
+.footer .insta__logo {
+  font-size: 4rem;
+}
+.footer .insta__logo:hover {
+  animation: scaleItem 2s;
+}
+.footer .link__logo {
+  font-size: 4rem;
+}
+.footer .link__logo:hover {
+  animation: scaleItem 2s;
+}
+.footer .social__footer--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.footer p {
+  color: white;
+  margin: 2%;
+  font-size: 3rem;
+  background: linear-gradient(to bottom right, white, #848484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1600px) {
+  .footer p {
+    margin: 1.5%;
+  }
+}
+@media (max-width: 1062px) {
+  .footer p {
+    margin: 1.5%;
+  }
+}
+@media (max-width: 450px) {
+  .footer p {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .footer p {
+    text-align: center;
+  }
 }
 @font-face {
   font-family: 'Lato';
