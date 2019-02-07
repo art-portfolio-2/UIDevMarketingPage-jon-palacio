@@ -56,6 +56,13 @@
       height: 192px;
       width: 192px;
       border-radius: 50%;
+
+			@media @800 {
+				height: 170px;
+				width: 170px;
+				/*border: @showMe;*/
+				margin: 5% auto;
+			}
     }
 
     @media @800 {
@@ -113,10 +120,28 @@
 	margin: 5% auto;
 	/*border: @showMe;*/
 
+	@media @450 {
+		width: 100%;
+	}
+
 	 p {
 		font-size: 1.5rem;
 		width: auto;
 		background: transparent;
 		font-style: italic;
+
+		@media @700 {
+			/*border: @showMe;*/
+			font-size: 1rem;
+		}
+
+		@media @phone {
+			/*border: @showMe;*/
+			margin: 0 5%;
+		}
+
+		@media @450 {
+			margin: 0 10%;
+		}
 	}
 }

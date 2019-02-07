@@ -752,7 +752,7 @@ img {
 }
 @media (max-width: 500px) {
   .whoWeAre__container {
-    margin: 1%;
+    /*margin: 1%;*/
   }
 }
 @media (max-width: 450px) {
@@ -793,6 +793,21 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .whoWeAreImgs__container img {
+    margin: 5% auto;
+  }
+}
+@media (max-width: 500px) {
+  .whoWeAreImgs__container img {
+    margin: 5% auto;
+  }
+}
+@media (max-width: 450px) {
+  .whoWeAreImgs__container img {
+    margin: 5% auto;
   }
 }
 .cta__container {
@@ -1192,6 +1207,14 @@ img {
   border-radius: 50%;
 }
 @media (max-width: 833px) {
+  .whoWeAre__about .whoWeAreImgs__about img {
+    height: 170px;
+    width: 170px;
+    /*border: @showMe;*/
+    margin: 5% auto;
+  }
+}
+@media (max-width: 833px) {
   .whoWeAre__about .whoWeAreImgs__about {
     display: flex;
     justify-content: center;
@@ -1250,11 +1273,33 @@ img {
   margin: 5% auto;
   /*border: @showMe;*/
 }
+@media (max-width: 450px) {
+  .names {
+    width: 100%;
+  }
+}
 .names p {
   font-size: 1.5rem;
   width: auto;
   background: transparent;
   font-style: italic;
+}
+@media (max-width: 767px) {
+  .names p {
+    /*border: @showMe;*/
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .names p {
+    /*border: @showMe;*/
+    margin: 0 5%;
+  }
+}
+@media (max-width: 450px) {
+  .names p {
+    margin: 0 10%;
+  }
 }
 @font-face {
   font-family: 'Lato';
